@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.mes div{
+  text-align: center;
+  padding-top: 5px;
+}
+
+.calendario {
+  display: flex;
+  justify-content: space-around;
+  width: 50em;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: 70em;
+  align-content: space-between;
+}
+.mes {
+  border: 2px solid #dd6d10;
+  width: 15em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mes > div:nth-child(1) {
+  background-color: #123645;
+  color: #f5f3f1;
+  height: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.mes > div:nth-child(n + 2) {
+  flex-basis: calc(100%/7);
+  border: 1px solid black;
+  height: 2em;
+  flex-grow: 2;
+}
+
+.calendario .mes .DS {
+  background-color: #01678f;
+  border-left: none;
+  border-right: none;
+  color: #e8e5e0;
+
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+input{
+	width: 60px;
+}
+
+.extra{
+	color: #b0aeae
+}
